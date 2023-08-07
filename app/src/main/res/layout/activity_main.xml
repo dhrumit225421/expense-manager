@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@drawable/bg_rounded_purpar2">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_tittle"
+            android:text="EXPENSE MANAGER"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:textStyle="bold">
+        </TextView>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignRight="@id/text_tittle"
+            android:layout_margin="5dp"
+            app:srcCompat="@android:drawable/ic_menu_add">
+
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="85dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/text_tittle"
+            android:id="@+id/expense"
+            android:text="EXPENSE"
+            android:textSize="18dp"
+            android:textColor="@color/black">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="119dp"
+            android:layout_toRightOf="@+id/expense"
+            android:id="@+id/balance"
+            android:gravity="right"
+            android:layout_marginRight="5dp"
+            android:text="BALANCE"
+            android:textSize="18dp"
+            android:textColor="@color/black">
+
+        </TextView>
+    </RelativeLayout>
+
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/blue_rounded">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/entry"
+                android:layout_margin="2dp"
+                android:text="Entries"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                >
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/date"
+                android:layout_below="@+id/entry"
+                android:text="date"
+                android:layout_margin="2dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rupees"
+                android:layout_margin="30dp"
+                android:gravity="right"
+                android:text="rupees"
+                android:textSize="18dp"
+                android:textColor="#ff3b30"
+                >
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/describe"
+                android:layout_margin="2dp"
+                android:layout_below="@+id/date"
+                android:text="describe"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                >
+            </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
