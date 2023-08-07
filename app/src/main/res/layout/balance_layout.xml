@@ -49,15 +49,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/date" />
 
+
     <TextView
         android:id="@+id/incomeTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
         android:layout_marginTop="4dp"
         android:text="Income"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.207"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/totalAmountTextView" />
 
@@ -66,7 +66,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="2dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="8dp"
         android:text="Expense"
         android:textAlignment="center"
@@ -78,28 +78,36 @@
 
     <TextView
         android:id="@+id/amountForIncomeTextView"
-        android:layout_width="61dp"
+        android:layout_width="65dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         android:text="600"
         android:textAlignment="center"
         android:textColor="#aeea00"
         android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.208"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/incomeTextView" />
+        app:layout_constraintHorizontal_bias="0.248"
+        app:layout_constraintStart_toEndOf="@+id/amountForExpenseTextView"
+        app:layout_constraintTop_toBottomOf="@+id/expenseTextView"
+        app:layout_constraintVertical_bias="0.011">
+
+    </TextView>
 
     <TextView
         android:id="@+id/amountForExpenseTextView"
-        android:layout_width="70dp"
+        android:layout_width="63dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="148dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="12dp"
         android:text="200"
         android:textAlignment="center"
         android:textColor="#ff5722"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/expenseTextView" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/incomeTextView"
+        app:layout_constraintVertical_bias="0.011" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
